@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | FTC Robotic Raiders #22648</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo/raiders_logo.png" alt="Robotic Raiders Logo">
+                    <span>Robotic Raiders #22648</span>
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="robot.html">Robot</a></li>
+                <li><a href="outreach.html">Outreach</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>FTC Robotic Raiders</h1>
+                <p class="team-number">#22648</p>
+                <p class="tagline">Delview Secondary School • Delta, British Columbia</p>
+                <a href="team.html" class="btn btn-primary">Meet Our Team</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-preview">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>We are an FTC school team based in Delview Secondary in Delta, British Columbia; our team was created in October 2022. We are all robot enthusiasts and enjoy spending time working together to strive toward the common goal of becoming a competitive robotics team in the region.</p>
+                        <p>This is our fourth time competing in the FIRST Tech Challenge. Although many of our members lack proper experience in working with robots, we are quickly learning and adapting to the different strategies and tactics involved in FTC.</p>
+                        <a href="team.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                    <div class="about-images">
+                        <!-- ✏️ EDIT: Update these images -->
+                        <img src="images/home/team-photo.jpg" alt="Team Photo">
+                        <img src="images/home/robot-main.jpg" alt="Our Robot">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Season Section -->
+        <section class="section season-highlight">
+            <div class="container">
+                <h2>2024-25 Season: INTO THE DEEP</h2>
+                <div class="season-content">
+                    <div class="season-text">
+                        <p>As we enter our fourth season in FTC, our team aims to take a step towards our common goal of becoming a more competitive team in the region.</p>
+                        <p>We aim to complete this through simultaneously maintaining gracious professionalism by encouraging high-quality work and emphasizing respect for the community. Despite many of our members having no experience in FTC, we are all learning and getting more actively involved.</p>
+                    </div>
+                    <div class="season-image">
+                        <img src="images/history/2025-25-intothedeep.jpg" alt="INTO THE DEEP Season Robot">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Links Section -->
+        <section class="section quick-links">
+            <div class="container">
+                <h2>Explore</h2>
+                <div class="links-grid">
+                    <a href="team.html" class="link-card">
+                        <h3>Our Team</h3>
+                        <p>Meet the students and mentors behind Robotic Raiders</p>
+                    </a>
+                    <a href="robot.html" class="link-card">
+                        <h3>Our Robot</h3>
+                        <p>See our robot designs and technical documentation</p>
+                    </a>
+                    <a href="outreach.html" class="link-card">
+                        <h3>Outreach</h3>
+                        <p>Learn about our community involvement</p>
+                    </a>
+                    <a href="sponsors.html" class="link-card">
+                        <h3>Sponsors</h3>
+                        <p>Support our team and see our partners</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo/raiders_logo.png" alt="Robotic Raiders Logo">
+                    <p>FTC Team #22648</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="robot.html">Robot</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/roboticraidersftc/" target="_blank">Instagram</a>
+                        <a href="https://x.com/DelviewRobotics/" target="_blank">X (Twitter)</a>
+                    </div>
+                    <p class="email">delviewrobotics@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FTC Robotic Raiders #22648. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-open');
+        });
+    </script>
+</body>
+</html>

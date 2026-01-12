@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot | FTC Robotic Raiders #22648</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo/raiders_logo.png" alt="Robotic Raiders Logo">
+                    <span>Robotic Raiders #22648</span>
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="robot.html" class="active">Robot</a></li>
+                <li><a href="outreach.html">Outreach</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Our Robot</h1>
+            <p>History of our robot designs through the seasons</p>
+        </section>
+
+        <!-- Current Season Robot -->
+        <section class="section robot-current">
+            <div class="container">
+                <h2>2024-25 Season: INTO THE DEEP</h2>
+                <div class="robot-showcase">
+                    <div class="robot-image-main">
+                        <img src="images/history/2025-25-intothedeep.jpg" alt="INTO THE DEEP Robot 2024-25">
+                    </div>
+                    <div class="robot-details">
+                        <h3>Robot Specifications</h3>
+                        <ul class="specs-list">
+                            <li><strong>Drive System:</strong> Mecanum Wheels</li>
+                            <li><strong>Control System:</strong> REV Control Hub</li>
+                            <li><strong>Frame:</strong> REV/goBILDA Channel</li>
+                            <li><strong>Lift System:</strong> Linear Slides with String/Pulley</li>
+                            <li><strong>Intake:</strong> Dual-Wheel Mechanism</li>
+                        </ul>
+                        <h3>Key Features</h3>
+                        <p>Our INTO THE DEEP robot is designed to collect and score samples efficiently. The mecanum drive system allows for omnidirectional movement, while our linear slide system provides the reach needed for high-level scoring.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Robot History -->
+        <section class="section robot-history">
+            <div class="container">
+                <h2>Robot History</h2>
+                <div class="history-timeline">
+                    
+                    <!-- ✏️ SEASON: 2023-24 CENTERSTAGE -->
+                    <div class="timeline-item">
+                        <div class="timeline-image">
+                            <img src="images/history/2023-24-centerstage.jpg" alt="CENTERSTAGE Robot 2023-24">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>2023-24: CENTERSTAGE</h3>
+                            <p>Our third season robot featured improvements in reliability and scoring mechanisms. We focused on consistent pixel placement and efficient autonomous routines.</p>
+                        </div>
+                    </div>
+
+                    <!-- ✏️ SEASON: 2022-23 POWERPLAY -->
+                    <div class="timeline-item">
+                        <div class="timeline-image">
+                            <img src="images/history/2022-23-powerplay.jpg" alt="POWERPLAY Robot 2022-23">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>2022-23: POWERPLAY</h3>
+                            <p>Our inaugural season! As a new team, we learned the fundamentals of robot building and FTC competition. This robot taught us valuable lessons about design iteration and teamwork.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Documentation -->
+        <section class="section robot-docs">
+            <div class="container">
+                <h2>Technical Documentation</h2>
+                <div class="docs-grid">
+                    <div class="doc-card">
+                        <h3>Chassis Design</h3>
+                        <p>Our robot uses a combination of REV and goBILDA components for a sturdy yet lightweight frame. The mecanum wheel configuration allows for omnidirectional movement.</p>
+                    </div>
+                    <div class="doc-card">
+                        <h3>Programming</h3>
+                        <p>We use Java with Android Studio for our robot programming. Our code includes TeleOp controls, autonomous routines, and sensor integration for competition.</p>
+                    </div>
+                    <div class="doc-card">
+                        <h3>Mechanisms</h3>
+                        <p>Our manipulator systems are designed for the specific game challenges. We use a combination of servos, motors, and custom 3D printed parts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo/raiders_logo.png" alt="Robotic Raiders Logo">
+                    <p>FTC Team #22648</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="robot.html">Robot</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/roboticraidersftc/" target="_blank">Instagram</a>
+                        <a href="https://x.com/DelviewRobotics/" target="_blank">X (Twitter)</a>
+                    </div>
+                    <p class="email">delviewrobotics@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FTC Robotic Raiders #22648. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-open');
+        });
+    </script>
+</body>
+</html>
