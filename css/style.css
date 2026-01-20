@@ -251,15 +251,35 @@ a:hover {
    ABOUT SECTION (Home Page)
    ============================================ */
 
+.about-preview h2 {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.section-subtitle {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    align-items: center;
+    align-items: start;
 }
 
 .about-text p {
     margin-bottom: 20px;
+    text-align: justify;
+}
+
+.about-image img {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
 }
 
 .about-images {
@@ -274,11 +294,41 @@ a:hover {
 }
 
 /* Season Section */
+.season-highlight {
+    background-color: var(--background);
+}
+
 .season-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    align-items: center;
+    align-items: start;
+}
+
+.season-content.reverse {
+    grid-template-columns: 1fr 1fr;
+}
+
+.season-content.reverse .season-image {
+    order: 1;
+}
+
+.season-content.reverse .season-text {
+    order: 2;
+}
+
+.season-text h2 {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.season-text .section-subtitle {
+    margin-bottom: 20px;
+}
+
+.season-text p {
+    text-align: justify;
+    margin-bottom: 15px;
 }
 
 .season-image img {
@@ -327,8 +377,8 @@ a:hover {
 }
 
 .coaches-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    max-width: 600px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width: 1000px;
 }
 
 .team-card {
@@ -362,6 +412,22 @@ a:hover {
 .team-card .role {
     color: var(--text-light);
     font-style: italic;
+    margin-bottom: 10px;
+}
+
+.team-card .bio {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.page-header .quote {
+    font-style: italic;
+    max-width: 800px;
+    margin: 15px auto 0;
+    opacity: 0.9;
+    font-size: 1rem;
 }
 
 /* ============================================
@@ -447,6 +513,85 @@ a:hover {
    OUTREACH PAGE
    ============================================ */
 
+.outreach-event {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.outreach-event:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.outreach-event.reverse {
+    direction: rtl;
+}
+
+.outreach-event.reverse > * {
+    direction: ltr;
+}
+
+.event-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.event-images.single {
+    grid-template-columns: 1fr;
+}
+
+.event-images img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+/* Zoom call image - portrait/tall image */
+.event-images.zoom-call {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+}
+
+.event-images.zoom-call img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: contain;
+}
+
+.event-content h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.event-content h4 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.event-date {
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.event-content p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Old card-based styles kept for compatibility */
 .events-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -476,6 +621,108 @@ a:hover {
 }
 
 /* Awards */
+.award-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.award-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.award-item.reverse {
+    direction: rtl;
+}
+
+.award-item.reverse > * {
+    direction: ltr;
+}
+
+.award-content h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.award-year {
+    color: var(--text-light);
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.award-content p {
+    text-align: justify;
+}
+
+.award-image img {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+/* History / Past Robots */
+.robot-history-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.robot-history-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.robot-history-item.reverse {
+    direction: rtl;
+}
+
+.robot-history-item.reverse > * {
+    direction: ltr;
+}
+
+.robot-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.robot-images.single {
+    grid-template-columns: 1fr;
+}
+
+.robot-images img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+.robot-info h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.robot-info p {
+    text-align: justify;
+}
+
+/* Old awards-content kept for compatibility */
 .awards-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -483,11 +730,6 @@ a:hover {
     align-items: center;
     max-width: 900px;
     margin: 0 auto;
-}
-
-.award-image img {
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .award-details h3 {
@@ -760,15 +1002,72 @@ footer {
     /* Grids become single column */
     .about-grid,
     .season-content,
+    .season-content.reverse,
     .robot-showcase,
     .awards-content,
+    .award-item,
+    .award-item.reverse,
+    .robot-history-item,
+    .robot-history-item.reverse,
     .sponsor-content,
     .contact-grid {
         grid-template-columns: 1fr;
     }
     
+    .season-content.reverse .season-image,
+    .season-content.reverse .season-text {
+        order: unset;
+    }
+    
+    .award-item.reverse,
+    .robot-history-item.reverse {
+        direction: ltr;
+    }
+    
+    .award-content h2,
+    .robot-info h2 {
+        text-align: center;
+    }
+    
+    .robot-images {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-preview h2,
+    .season-text h2,
+    .section-subtitle {
+        text-align: center;
+    }
+    
+    .about-text p,
+    .season-text p {
+        text-align: left;
+    }
+    
     .about-images {
         grid-template-columns: 1fr;
+    }
+    
+    /* Outreach page mobile */
+    .outreach-event {
+        grid-template-columns: 1fr;
+    }
+    
+    .outreach-event.reverse {
+        direction: ltr;
+    }
+    
+    .event-images {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-images.zoom-call {
+        max-width: 100%;
+    }
+    
+    .event-images.zoom-call img {
+        max-height: 350px;
+        margin: 0 auto;
     }
     
     .timeline-item {
@@ -803,6 +1102,246 @@ footer {
     }
     
     .tiers-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Alumni CSS */
+/* ===================================
+   ALUMNI PAGE STYLES
+   Add these styles to your style.css
+   =================================== */
+
+/* Alumni Season Sections */
+.alumni-season {
+    padding: 60px 0;
+}
+
+.alumni-season.alt-bg {
+    background-color: #f5f5f5;
+}
+
+.season-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.season-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #8B0000;
+}
+
+.season-game {
+    display: inline-block;
+    background-color: #8B0000;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.founding-badge {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #333;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+/* Founding Note */
+.founding-note {
+    background-color: #fff8e1;
+    border-left: 4px solid #FFD700;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 0 8px 8px 0;
+}
+
+.founding-note p {
+    margin: 0;
+    color: #555;
+}
+
+/* Alumni Photos Grid */
+.alumni-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.alumni-photo img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.photo-caption {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}
+
+/* Placeholder Photo Boxes */
+.alumni-photo.placeholder .placeholder-box {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(135deg, #e0e0e0 0%, #c0c0c0 100%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+
+.placeholder-box span {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.placeholder-box p {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Alumni Members & Coaches */
+.alumni-members,
+.alumni-coaches {
+    margin-bottom: 30px;
+}
+
+.alumni-members h3,
+.alumni-coaches h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #8B0000;
+}
+
+.members-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.member-item {
+    background-color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-left: 3px solid #8B0000;
+}
+
+.member-item strong {
+    color: #8B0000;
+}
+
+/* Placeholder Content */
+.placeholder-content {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px dashed #ddd;
+}
+
+.placeholder-content p {
+    color: #888;
+    margin: 0;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 60px 0;
+}
+
+.testimonials-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-intro {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.testimonials-placeholder {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.testimonial-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.testimonial-card.placeholder {
+    border: 2px dashed #ddd;
+    background-color: #fafafa;
+}
+
+.testimonial-text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.testimonial-author {
+    color: #8B0000;
+    font-weight: 600;
+}
+
+.testimonial-cta {
+    text-align: center;
+    color: #666;
+}
+
+.testimonial-cta a {
+    color: #8B0000;
+    font-weight: 600;
+}
+
+/* Page Subtitle */
+.subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    font-style: italic;
+    margin-top: -10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .season-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .founding-badge {
+        display: block;
+        margin: 10px auto 0;
+        width: fit-content;
+    }
+    
+    .alumni-photos {
+        grid-template-columns: 1fr;
+    }
+    
+    .members-list {
         grid-template-columns: 1fr;
     }
 }
